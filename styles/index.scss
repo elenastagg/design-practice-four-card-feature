@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/*COLOURS*/
+$RED: hsl(0, 78%, 62%);
+$CYAN: hsl(180, 62%, 55%);
+$ORANGE: hsl(34, 97%, 64%);
+$BLUE: hsl(212, 86%, 64%);
+$VERY-DARK-BLUE: hsl(234, 12%, 34%);
+$GREY-BLUE: hsl(229, 6%, 66%);
+$LIGHT-GREY: hsl(0, 0%, 98%);
+$WHITE: hsl(0, 100%, 100%);
+
+/*LAYOUT*/
+body {
+  background-color: $LIGHT-GREY;
+  font-family: "Poppins", sans-serif;
+}
+.component-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 20px;
+}
+.header-component {
+  text-align: center;
+  margin: 50px 15px 50px 15px;
+  padding: 0px 15px 0px 15px;
+}
+.square-component {
+  background-color: $WHITE;
+  margin: auto;
+  box-shadow: 0px 10px 23px -14px rgba(194, 190, 194, 1);
+  padding: 0px 15px 0px 15px;
+  height: auto;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.box-content {
+  padding: 20px;
+}
+.cyan-block {
+  border-top: 5px solid $CYAN;
+}
+.red-block {
+  border-top: 5px solid $RED;
+}
+.orange-block {
+  border-top: 5px solid $ORANGE;
+}
+.blue-block {
+  border-top: 5px solid $BLUE;
+}
+.icon {
+  float: right;
+  margin: 15px;
+}
+
+/*FONT STYLES*/
+.lighter-heading {
+  color: $VERY-DARK-BLUE;
+  font-weight: 200;
+}
+h2 {
+  color: $VERY-DARK-BLUE;
+}
+h3 {
+  color: $VERY-DARK-BLUE;
+  line-height: 5px;
+}
+p {
+  font-size: 15px;
+  font-weight: 200;
+  color: $GREY-BLUE;
+}
+
+@media (min-width: 1000px) {
+  .column-2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+  }
+}
