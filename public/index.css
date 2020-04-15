@@ -36,7 +36,8 @@ body {
 }
 
 /*MAIN COMPONENT*/
-.grid-container {
+.component-container {
+  margin: auto;
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -94,10 +95,6 @@ body {
 
 /*DESKTOP VERSION*/
 @media (min-width: 1000px) {
-  .entire-component {
-    width: 80%;
-    margin: auto;
-  }
   /*HEADER*/
   .header-component {
     margin: 80px auto 60px auto;
@@ -123,16 +120,15 @@ body {
 
   /*MAIN COMPONENT*/
   .component-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .grid-container {
     grid-template-columns: 349px 349px 349px;
     grid-template-rows: auto auto auto auto auto;
     grid-column-gap: 30px;
     grid-row-gap: 26px;
+    margin-top: 14px;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   /*COMPONENT ELEMENT*/
